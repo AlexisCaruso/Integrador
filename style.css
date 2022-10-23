@@ -1,3 +1,83 @@
-body {
-    background: black;
+@import url('https://fonts.googleapis.com/css2? family= Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400 & family= Poppins: peso@100;400 & mostrar=cambiar');
+
+/*background: #000000;  /* fallback for old browsers 
+background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+
+:root {
+    --background: rgba(0,0,0,255);
+    --background2: #303030;
+    --amarillo: #eec55a;
+    --rojo: #e64210;
+    --blanco: #ffffff;
+    --radiante: #ef4a13 #100f0f;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins";
+    background: var(--background);
+  }
+
+  body {
+    height: 100vh;
+    width: 100%;
+  }
+
+  header {
+    height: 250px;
+    width: 100%;
+    background: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+    margin-top: 0;
+  }
+  
+  header img {
+    height: 250px;
+    width: 350px;
+    border-radius: 40px;
+  }
+
+  nav {
+    background-color: var(--background);
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+  }
+
+  .navbar-list1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.navbar-list1 a {
+    color: var(--amarillo);
+}
+
+.navbar-list2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.navbar-list2 a {
+    color: var(--amarillo);
 }
