@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2? family= Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400 & family= Poppins: peso@100;400 & mostrar=cambiar');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 
 /*background: #000000;  /* fallback for old browsers 
 background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -19,13 +20,14 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    font-family: "Poppins";
     background: var(--background);
+    font-family: "Poppins", sans-serif;
   }
 
   body {
     height: 100vh;
     width: 100%;
+    color: var(--amarillo);
   }
 
   header {
@@ -36,12 +38,14 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
     justify-content: space-between;
     align-items: center;
     padding: 0px 70px;
-    margin-top: 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
   }
   
   header img {
     height: 250px;
-    width: 350px;
+    width: 300px;
     border-radius: 40px;
   }
 
@@ -67,17 +71,60 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
 
 .navbar-list1 a {
     color: var(--amarillo);
+    font-size: 20px;
 }
 
 .navbar-list2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     font-size: 25px;
     border-radius: 10px;
 }
 
 .navbar-list2 a {
     color: var(--amarillo);
+    font-size: 20px;
 }
+
+#hero {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid red;
+  height: 500px;
+  width: 80%;
+  gap: 20px;
+}
+
+.hero_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 500px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.hero_cardinfo {
+  border: solid red;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 50px;
+}
+
+.hero_cardinfo img {
+  display: flex;
+  width: 200px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
