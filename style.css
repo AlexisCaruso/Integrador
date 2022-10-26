@@ -20,7 +20,7 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    background: var(--background);
+    background: var(--blanco);
     font-family: "Poppins", sans-serif;
   }
 
@@ -31,9 +31,9 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
   }
 
   header {
-    height: 250px;
+    height: 80px;
     width: 100%;
-    background: var(--background);
+    background: var(--blanco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,8 +44,8 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
   }
   
   header img {
-    height: 250px;
-    width: 300px;
+    height: 80px;
+    width: 80px;
     border-radius: 40px;
   }
 
@@ -89,25 +89,26 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
 }
 
 #hero {
-  padding: 30px;
+  padding: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border: solid red;
   height: 500px;
-  width: 80%;
+  width: 100%;
   gap: 20px;
 }
 
 .hero_info {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  height: 300px;
-  width: 500px;
-  gap: 20px;
-  padding: 20px;
+  align-items: center;
+  gap: 30px;
+  padding: 10px; 
+}
+
+.hero_info h1 {
+  text-align: center;
 }
 
 .hero_cardinfo {
