@@ -26,27 +26,29 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
   body {
     height: 100vh;
     width: 100%;
-    background-image: url(./Media/fondo_ok.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: var(--background);
   }
 
   header {
-    height: 50px;
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 70px;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 2;
+    background: var(--background);
+    /*background-image: url(./Media/fondo_ok.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
   }
   
   header img {
-    height: 80px;
-    width: 80px;
-    border-radius: 40px;
+    height: 100%;
+    width: 8%;
+    border-radius: 50px;
   }
 
   nav {
@@ -54,22 +56,31 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
     width: 70%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     gap: 50px;
-    padding: 20px;
+    padding: 10px;
+    background: var(--background);
   }
 
   .navbar-list1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     gap: 40px;
-    font-size: 25px;
+    font-size: 10px;
     border-radius: 10px;
 }
 
 .navbar-list1 a {
-    color: var(--amarillo);
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  color: transparent;
     font-size: 20px;
 }
 
@@ -77,57 +88,93 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     font-size: 25px;
     border-radius: 10px;
 }
 
 .navbar-list2 a {
-    color: var(--amarillo);
-    font-size: 20px;
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+}
+
+#logo {
+  margin-top: 50px;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo img {
+  height: 800px;
 }
 
 #hero {
-  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid red;
   height: 400px;
   width: 100%;
-  gap: 30px;
 }
 
 .hero_info {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  padding: 10px; 
+  gap: 10px;
+  text-align: center;
+  width: 100%;
+  
 }
 
 .hero_info h1 {
   text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  bbackground: #334d50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cbcaa5, #334d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .hero_info p {
-  text-align: center;
+  padding: 70px;
+  background: #C9D6FF;  /* fallback for old browsers */ 
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.hero_cardinfo {
-  border: solid red;
-  display: flex;
-  align-items: center;
-  width: 80px;
-  height: 50px;
+.hero_info a {
+  padding: 10px;
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  color: transparent;
+  border-radius: 30px;
+  font-weight: 600;
 }
 
-.hero_cardinfo img {
-  display: flex;
-  width: 200px;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
+.hero_img img {
+  align-items: flex-start;
+  padding: 10px;
+  height: 50%;
+  width: 50%;
 }
 
 
