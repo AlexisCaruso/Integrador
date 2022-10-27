@@ -20,20 +20,20 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    background: var(--blanco);
     font-family: "Poppins", sans-serif;
   }
 
   body {
     height: 100vh;
     width: 100%;
-    color: var(--amarillo);
+    background-image: url(./Media/fondo_ok.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   header {
-    height: 80px;
+    height: 50px;
     width: 100%;
-    background: var(--blanco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,6 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
   }
 
   nav {
-    background-color: var(--background);
     height: 100%;
     width: 70%;
     display: flex;
@@ -89,14 +88,14 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
 }
 
 #hero {
-  padding: 50px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid red;
-  height: 500px;
+  height: 400px;
   width: 100%;
-  gap: 20px;
+  gap: 30px;
 }
 
 .hero_info {
@@ -108,6 +107,10 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
 }
 
 .hero_info h1 {
+  text-align: center;
+}
+
+.hero_info p {
   text-align: center;
 }
 
