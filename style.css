@@ -25,38 +25,54 @@
   }
 
 header {
-
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 65px;
-  padding: 0px 30px;
+  padding: 0px 20px;
   position: absolute;
   top: 0;
   z-index: 2;
 }
   
 header img {
-  height: 40px;
+  padding: 10px;
+  height: 65px;
+  width: 65px;
 }
 
-nav {
-  gap: 150px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
 .navbar-list1 {
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 20px;
+}
+
+.navbar-list2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  gap: 20px;
 }
 
 .navbar-list1 a {
-  
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-list2 a {
+  color: white;
+  font-size: 18px;
 }
 
 main {  
