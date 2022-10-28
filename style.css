@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
-/*background: #000000;  /* fallback for old browsers 
-background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-/*background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
-
 :root {
     --background: rgba(0,0,0,255);
     --background2: #303030;
@@ -41,15 +37,11 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
     top: 0;
     z-index: 2;
     background: var(--background);
-    font-family: 'Roboto', sans-serif;
-    /*background-image: url(./Media/fondo_ok.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;*/
   }
   
   header img {
-    height: 100%;
-    width: 8%;
+    height: 100px;
+    width: 80px;
     border-radius: 50px;
   }
 
@@ -104,12 +96,18 @@ background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-2
 }
 
 #logo {
-  margin-top: 100px;
-  height: 90%;
-  width: 100%;
+  border: solid 10px red;
+  background-color: var(--background);
+}
+
+.hero_cardinfo { 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.hero_cardinfo img {
+  
 }
 
 #hero {
