@@ -75,7 +75,9 @@ header img {
 }
 
 main {  
-  background: var(--background);
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,15 +88,17 @@ main {
 }
 
 #logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 100px;
-  background-color: var(--background);
+  height: 600px;
 }
 
 .hero_cardinfo, img {
+  height: 600px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 #hero {
@@ -118,8 +122,8 @@ main {
 .hero_cardtext h1 {
   letter-spacing: 2px;
   text-align: center;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 45px;
+  font-weight: 800;
   background: #3E5151;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -129,6 +133,7 @@ main {
 
 .hero_cardtext p {
   padding: 70px;
+  font-size: 25px;
   color: var(--texto);
 }
 
@@ -156,23 +161,23 @@ main {
   padding: 20px;
   max-width: 1200px;
   width: 100%;
-  background-color: #232323;
   margin-bottom: 30px;
 }
 
 .servicios h2 {
-  padding: 20px;
+  text-align: center;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 10px;
+  letter-spacing: 12px;
   background: #3E5151;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   color: transparent;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 800;
+  font-size: 45px;
 }
 
 .servicios_container {
@@ -182,7 +187,6 @@ main {
   flex-wrap: wrap;
   gap: 25px;
   padding: 10px;
-  background-color: black;
   max-width: 1200px;
 }
 
@@ -195,16 +199,14 @@ main {
   width: 300px;
   height: 200px;
   padding: 10px;
-  background-color: var(--background)
 }
 
 .servicio_container-info p {
   text-align: center;
   color: var(--texto);
-  font-family: "Poppins";
-  background-color: var(--background);
   border-radius: 30px;
   padding: 10px 20px;
+  font-size: 22px; 
 }
 
 .servicio_container-item img {
@@ -213,10 +215,74 @@ main {
   justify-content: center;
   padding: 5px;
   border-radius: 30px;
-  background-color: var(--background);
+  background-color: var(--background2);
   height: 100%;
   width: 170px;
 }
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.beneficios h2 {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 10px;
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.beneficios_card {
+  border: red solid 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  width: 200px;
+  max-width: 950px;
+}
+
+.beneficios_card_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 950px;
+}
+
+.beneficios_card_img img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 30px;
+  border: #000000 solid 5px;
+  height: 100%;
+  width: 170px;
+ }
+
+ .beneficios_card_text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+ }
+
+
 
 
 
