@@ -7,6 +7,7 @@
     --rojo: #e64210;
     --texto: #F7EFCB;
     --radiante: #ef4a13 #100f0f;
+    --color: white;
   }
 
 * {
@@ -25,9 +26,10 @@
   }
 
 header {
+  gap: 20px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 65px;
   padding: 0px 20px;
@@ -43,17 +45,15 @@ header img {
 }
 
 .navbar {
+  min-width: 300px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  gap: 150px;
 }
 
 .navbar-list1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
   gap: 20px;
 }
 
@@ -61,7 +61,6 @@ header img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 30%;
   gap: 20px;
 }
 
@@ -115,7 +114,7 @@ main {
   width: 100%;
 }
 
-.hero_info h1 {
+.hero_cardtext h1 {
   letter-spacing: 2px;
   text-align: center;
   font-size: 40px;
@@ -127,16 +126,19 @@ main {
   color: transparent;
 }
 
-.hero_info p {
+.hero_cardtext p {
   padding: 70px;
+  color: var(--texto);
 }
 
-.hero_info a {
-  background-image: linear-gradient(to right, #16222A 0%, #2d4049 31%, #16222A 100%);  padding: 10px;
-  color: var(--texto);
-  font-weight: 10px;
+.hero_cardtext a {
+  border: solid 2px rgba(255, 255, 255, 0.705);
+  color: white;
+  background: var (--background);
+  font-weight: 8px;
   border-radius: 30px;
   font-weight: 100;
+  padding: 10px 35px;
 }
 
 .hero_img img {
@@ -144,4 +146,66 @@ main {
   height: 50%;
   width: 50%;
 }
+
+.servicios {
+  padding: 50px 20px;
+  height: 800px;
+  width: 100%;
+}
+
+.servicios h2 {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 10px;
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.servicios_container{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  
+}
+
+.servicio_container-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: var(--background2);
+  border-radius: 35px;
+}
+
+.servicio_container-item p {
+  font-size: 15px;
+  text-align: center;
+  color: var(--texto);
+  font-family: "Roboto";
+}
+
+.servicio_container-item img {
+  height: 100px;
+  border-radius: 35px;
+}
+
+
+
+
+
+
+
+
+
+
 
