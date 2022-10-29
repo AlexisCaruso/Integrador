@@ -2,7 +2,7 @@
 
 :root {
     --background: rgba(0,0,0,255);
-    --background2: #303030;
+    --background2: #656565;
     --amarillo: #eec55a;
     --rojo: #e64210;
     --texto: #F7EFCB;
@@ -103,6 +103,7 @@ main {
   align-items: center;
   width: 100%;
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 .hero_info {
@@ -148,13 +149,15 @@ main {
 }
 
 .servicios {
-  padding: 50px 20px;
-  height: 800px;
-  width: 100%;
+  padding: 20px;
+  height: 90gir0px;
+  max-width: 1200px;
+  background-color: #232323;
+  margin bottom: 50px;
 }
 
 .servicios h2 {
-  padding: 50px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,21 +172,23 @@ main {
 }
 
 .servicios_container{
+  height: 700px;
+  max-width: 950px;
   padding: 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  
+  background-color: #000000;
 }
 
 .servicio_container-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  background: var(--background2);
+  gap: 10px;
+  padding: 10px;
   border-radius: 35px;
 }
 
@@ -196,7 +201,7 @@ main {
 
 .servicio_container-item img {
   height: 100px;
-  border-radius: 35px;
+  border-radius: 10px;
 }
 
 
