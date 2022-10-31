@@ -143,11 +143,10 @@ main {
 }
 
 .hero_cardtext a {
-  border: solid 2px rgba(255, 255, 255, 0.705);
-  color: white;
-  background: var (--background);
+  border: solid 1px rgba(255, 255, 255, 0.705);
+  color: #f1c65c;
   border-radius: 30px;
-  font-weight: 100;
+  font-weight: 500;
   padding: 10px 35px;
 }
 
@@ -175,7 +174,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 12px;
   background: #e9d362;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #333333, #e9d362);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #333333, #e9d362); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -201,9 +199,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   border-radius: 35px;
-  width: 300px;
-  height: 200px;
   padding: 10px;
 }
 
@@ -213,6 +210,8 @@ main {
   border-radius: 30px;
   padding: 10px 20px;
   font-size: 22px; 
+  border: solid 2px var(--background2);
+  border-radius: 20px;
 }
 
 .servicio_container-item img {
@@ -221,7 +220,6 @@ main {
   justify-content: center;
   padding: 5px;
   border-radius: 30px;
-  background-color: var(--background2);
   height: 100%;
   width: 170px;
 }
@@ -236,7 +234,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 10px;
   background: #e9d362;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #333333, #e9d362);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #333333, #e9d362); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -249,9 +246,11 @@ main {
 .beneficios_card {
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 20px;
   gap: 50px;
+  width: 100%;
   max-width: 950px;
 }
 
@@ -284,6 +283,70 @@ main {
   color: white;
  }
 
+ .contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 750px;
+  width: 100%;
+  gap: 20px;
+ }
+
+ .contacto h2 {
+  gap: 20px ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9d362;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #333333, #e9d362);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #333333, #e9d362); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  font-size: 45px;
+ }
+
+ .contacto_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 10px;
+  max-width: 1200px;
+ }
+
+ .contacto_redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+ }
+
+ .contacto_redes img {
+   height: 30px;
+   width: 30px;
+ }
+
+.contacto_redes p {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 18px; 
+  font-weight: 500; 
+  color: white;
+}
+
+.contacto_map {
+ gap: 30px;
+ padding: 30px;
+}
 
 
 
