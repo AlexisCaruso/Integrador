@@ -42,20 +42,24 @@ header {
   
 header img {
   padding: 10px;
+  gap: 20px;
   height: 65px;
   width: 65px;
 }
 
 .navbar {
-  min-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 150px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .navbar-list1 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -247,7 +251,7 @@ main {
   display: flex;
   align-content: center;
   justify-content: center;
-  padding: 20px;
+  padding: 40px;
   gap: 50px;
   width: 100%;
   max-width: 950px;
@@ -270,9 +274,9 @@ main {
   border-radius: 30px;
   height: 100%;
   width: 170px;
- }
+}
 
- .beneficios_card_text {
+.beneficios_card_text {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -280,13 +284,13 @@ main {
   font-size: 22px; 
   font-weight: 500; 
   color: white;
- }
+}
 
- .contacto {
+.contacto {
   padding: 20px;
- }
+}
 
- .contacto h2 {
+.contacto h2 {
   gap: 20px ;
   text-align: center;
   display: flex;
@@ -299,9 +303,9 @@ main {
   color: transparent;
   font-weight: 900;
   font-size: 45px;
- }
+}
 
- .contacto h3 {
+.contacto h3 {
   padding: 15px;
   text-align: center;
   display: flex;
@@ -310,9 +314,9 @@ main {
   font-weight: 500;
   font-size: 18px;
   color: white;
- }
+}
 
- .contacto_container {
+.contacto_container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,7 +324,7 @@ main {
   gap: 25px;
   padding: 10px;
   max-width: 1200px;
- }
+}
 
 .contacto_map {
  gap: 30px;
@@ -328,38 +332,56 @@ main {
 }
 
 footer {
-  gap: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: var(--background);
-  height: 100px;
   width: 100%;
-  padding: 10px;
+  gap: 15px;
 }
 
 footer img {
-  padding: 5px;
-  height: 70px;
-  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 65px;
  }
 
 .footer_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   width: 100%;
  }
 
 .footer_redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  width: 50%;
-  gap: 10px;
+  width: 100%;
+  gap: 20px;
  }
 
  .footer_redes img {
-  height: 30%;
+  height: 50px;
+  width: 50px;
+ }
+
+ .footer_redes p {
+  color: white;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .footer_firma h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto);
  }
 
 
