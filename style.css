@@ -28,6 +28,7 @@
 header {
   gap: 20px;
   width: 100%;
+  max-width: 1600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +52,7 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 150px;
+  gap: 100px;
   max-width: 1200px;
   width: 100%;
 }
@@ -92,6 +93,7 @@ main {
   justify-content: center;
   color: var(--texto);
   width: 100%;
+  max-width: 1600px;
   min-width: 320px;
   gap: 10px;
 }
@@ -251,10 +253,9 @@ main {
   display: flex;
   align-content: center;
   justify-content: center;
-  padding: 40px;
-  gap: 50px;
+  padding: 20px;
+  gap: 15px;
   width: 100%;
-  max-width: 950px;
 }
 
 .beneficios_card_item {
@@ -263,7 +264,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  max-width: 950px;
+  max-width: 1600px;
 }
 
 .beneficios_card_img img {
@@ -320,15 +321,35 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding: 10px;
-  max-width: 1200px;
+  max-width: 1600px;
+  padding: 20px;
 }
 
-.contacto_map {
- gap: 30px;
- padding: 30px;
+.contacto_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contacto_form-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 30px;
+}
+
+textarea {
+  height: 50px;
+  width: 90%;
+}
+
+.contacto_map iframe {
+  max-width: 100%;
+  
 }
 
 footer {
@@ -338,15 +359,17 @@ footer {
   flex-direction: column;
   background-color: var(--background);
   width: 100%;
+  max-width: 1600px;
+  min-width: 320px;
   gap: 15px;
 }
 
 footer img {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 65px;
-  width: 65px;
+  height: 45px;
+  width: 45px;
  }
 
 .footer_container {
@@ -363,18 +386,19 @@ footer img {
   align-items: center;
   color: white;
   width: 100%;
-  gap: 20px;
+  gap: 15px;
  }
 
  .footer_redes img {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
  }
 
  .footer_redes p {
   color: white;
   display: flex;
   flex-direction: column;
+  font-size: 15px;
  }
 
  .footer_firma h4 {
